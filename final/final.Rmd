@@ -90,6 +90,9 @@ survey %>%
 ```
 
 # Yöntem ve Veri Analizi
+Bu bölümde veri setindeki bilgileri kullanarak çalışmanın amacına ulaşmak için kullanılacak yöntemleri açıklayın. Derste işlenen/işlenecek olan analiz yöntemlerinden (Hipotez testleri ve korelasyon analizi gibi) çalışmanın amacına ve veri setine uygun olanlar bu bölümde kullanılmalıdır. [@newbold:2003; @ozsoy:2010; @ozsoy:2014]
+
+Örneğin, regresyon analizi gerçekleştiriyorsanız tahmin ettiğiniz denklemi bu bölümde tartışınız. Denklemlerinizi ve matematiksel ifadeleri $LaTeX$ kullanarak yazınız.
 
 
 $$
@@ -111,7 +114,14 @@ ggplot(survey) +
 ```
 
 
+
+
+
+
+
+
 # Sonuç
+
 Veri setimizi incelediğimizde karşılaştığımız tablo ülkemizin büyük şehirlerinde artan nüfusa oranla evlenme sayılarının giderek düştüğü aşikâr bir gerçektir.  Her ne kadar ülkemizin doğu kesiminde fazla bir azalmanın görülmese bile ilerleyen dönemlerden kırsaldan kente olan göçlerle birlikte o bölgede evlenme yaşının artacağı evlenme sayılarının azalacağı şekillinde bir öngörüde bulunabiliriz. Bununla birlikte azalan doğurganlığın ülkemiz nüfus açısından bir tehlike oluşturabilir. Bölgelerimizde İklim şartları, ailelerin yaşam tarzları ve geleneklerde şehirlere göre evlenme sayılarındaki değişkenliği açıklaya bilir. Aile yapısın bozulması da kuvvetli bağların bozulup kültürümüzün yok olmasına da sebep olabilmektedir. Bu sorunun çözümü kişilerin bilinçlendirilmesiyle ve devlet teşviğiyle mümkün kıllanabilir. Devletimiz değişen sosyal hayat şartları ve ekonomik problemlerin aşılmasında genç yaştaki en azından 24-30 yaş arasındaki bireylere desteğiyle mümkün kılınabilir. Bu problemin devlet eliyle çözülmesi daha mümkün gözükmektedir .Ancak bu gözlem verilerin bir müddet daha devam etmesi kesin sonuçlar elde etmemize yarar.
 
 \newpage
