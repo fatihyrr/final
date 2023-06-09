@@ -26,9 +26,7 @@ biblio-style: apalike
 abstract: |
   Türkiye, aile kültürünün en güzel yaşandığı ülkelerden biridir. Daha çok gelenekçi bir aile yapısı mevcuttur. Ancak son yıllarda baktığımızda ülkemizde aile yapısının giderek dönüşüme uğradığı görülmektedir. Kültürel değişim, sosyo-ekonomik gelişme, bireysel tutumlar, modernleşme gibi birçok neden, aile ve evlilik kavramlarına bakış açımızın değişmesine neden olmuştur .Değişen bu bakış açısı hem ailenin önemi giderek azaltmış hem insanlarda evlenmenin önüne bir engel olarak çıkmıştır. Evlenme yaşı da oldukça yükselmeye başlamış ve doğurganlık oranında düşmesine yol  açmıştır . Kadınlar evlenme olayında artık önemli bir faktör haline gelmiş kendi karar mekanizmasına sahip bireyler olmuşlardır ve toplumda kadının önemi artmıştır. Kadınların da eğitim ve iş hayatına atılmalarıyla birlikte evlenme için karar ailelerden bir nevi bireylere geçmiştir. Türkiye devam eden ekonomik kriz, boşanmaların artması evlenme oranlarının düşlemesine neden olmuştur 
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
-```
+
 
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
@@ -57,37 +55,56 @@ Medyan Evlilik Sayısı: Medyan değeri, evlilik sayılarının orta noktasını
 
 En Yüksek ve En Düşük Evlilik Sayısı: Tablodaki verilere göre, yıllar arasında en yüksek ve en düşük evlilik sayıları değişmektedir. Örneğin, en yüksek evlilik sayısı 2011 yılında 114382 iken, en düşük evlilik sayısı 2020 yılında 3046 olarak görülmektedir.
 
-```{r,echo=FALSE}
-library(tidyverse)
-library(here)
-survey <- read_csv("https://raw.githubusercontent.com/fatihyrr/final/main/data/%C3%B6dev1.csv")
 
-```
 
  
 
-```{r, echo=FALSE}
-library(xtable) 
-# devtools::install_github("fatihyrr/summarytools")
-library(summarytools)
-st_options(lang = "tr")
-
-```
 
 
-```{r results='asis', echo=FALSE}
-survey %>%
- select("Province","ikibindokuz", "ikibinon", "ikibinonbir", "ikibinoniki","ikibinonüç","ikibinondört","ikibinonbeş","ikibinonaltı","ikibinonyedi","ikibinonsekiz","ikibinondokuz","ikibinyirmi","ikibinyirmibir","ikibinyirmiiki") %>% 
-  descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
-  xtable(caption = "Özet İstatistikler",
-         label = "tab:ozet",
-         align = c("l", "c", "c", "c", "c", "c")) %>% 
-  print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
-survey %>% 
-  group_by(ikibinonbir) %>% 
-  filter(n() > 0) %>% 
-  summarise(across(where(is.numeric), ~ mean(.x,na.rm=TRUE)))
-```
+
+\begin{table}[ht]
+\centering
+\caption{Özet İstatistikler} 
+\label{tab:ozet}
+\begin{tabular}{lccccc}
+  \toprule
+ & Ortalama & Std.Sap & Min & Medyan & Mak \\ 
+  \midrule
+ikibindokuz & 7305.46 & 12117.10 & 599.00 & 4338.00 & 100406.00 \\ 
+  ikibinon & 7194.01 & 12490.42 & 604.00 & 4043.00 & 104055.00 \\ 
+  ikibinonaltı & 7339.42 & 13600.66 & 465.00 & 3648.00 & 113059.00 \\ 
+  ikibinonbeş & 7444.22 & 13748.38 & 495.00 & 3875.00 & 114382.00 \\ 
+  ikibinonbir & 7318.21 & 12775.04 & 574.00 & 4048.00 & 105860.00 \\ 
+  ikibinondokuz & 6695.23 & 12095.45 & 428.00 & 3479.00 & 100088.00 \\ 
+  ikibinondört & 7403.75 & 13468.51 & 528.00 & 3995.00 & 112141.00 \\ 
+  ikibinoniki & 7453.72 & 13293.73 & 547.00 & 4020.00 & 110478.00 \\ 
+  ikibinonsekiz & 6844.31 & 12270.33 & 403.00 & 3490.00 & 101333.00 \\ 
+  ikibinonüç & 7409.11 & 13344.35 & 528.00 & 4098.00 & 111050.00 \\ 
+  ikibinonyedi & 7030.36 & 12813.59 & 445.00 & 3596.00 & 106053.00 \\ 
+  ikibinyirmi & 6028.83 & 10541.60 & 355.00 & 3046.00 & 86029.00 \\ 
+  ikibinyirmibir & 6952.35 & 12092.73 & 429.00 & 3547.00 & 98796.00 \\ 
+  ikibinyirmiiki & 7090.84 & 12856.82 & 394.00 & 3552.00 & 105694.00 \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
+# A tibble: 81 x 14
+   ikibinonbir ikibind~1 ikibi~2 ikibi~3 ikibi~4 ikibi~5 ikibi~6 ikibi~7 ikibi~8
+         <dbl>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
+ 1         574       638     604     596     528     566     513     470     445
+ 2         608       599     605     547     547     528     495     465     460
+ 3         894       887     932     893     831     761     657     671     621
+ 4         932      1059     921     983     915     829     881     820     708
+ 5        1086      1138    1146    1183    1107    1098    1075    1005     963
+ 6        1282      1192    1276    1280    1259    1350    1277    1332    1282
+ 7        1308      1239    1241    1308    1313    1308    1297    1378    1306
+ 8        1366      1463    1350    1311    1280    1294    1157    1169    1143
+ 9        1392      1654    1602    1404    1393    1405    1247    1247    1157
+10        1512      1501    1524    1584    1586    1737    1750    1693    1716
+# ... with 71 more rows, 5 more variables: ikibinonsekiz <dbl>,
+#   ikibinondokuz <dbl>, ikibinyirmi <dbl>, ikibinyirmibir <dbl>,
+#   ikibinyirmiiki <dbl>, and abbreviated variable names 1: ikibindokuz,
+#   2: ikibinon, 3: ikibinoniki, 4: ikibinonüç, 5: ikibinondört,
+#   6: ikibinonbeş, 7: ikibinonaltı, 8: ikibinonyedi
 # Yöntem ve Veri Analizi
 Bu bölümde veri setindeki bilgileri kullanarak çalışmanın amacına ulaşmak için kullanılacak yöntemleri açıklayın. Derste işlenen/işlenecek olan analiz yöntemlerinden (Hipotez testleri ve korelasyon analizi gibi) çalışmanın amacına ve veri setine uygun olanlar bu bölümde kullanılmalıdır. [@newbold:2003; @ozsoy:2010; @ozsoy:2014]
 
@@ -95,19 +112,53 @@ $$
 ikibinonbes = [7444.22, 13748.38, 495.00, 3875.00, 114382.00]
 ikibinyirmi = [6028.83, 10541.60, 355.00, 3046.00, 86029.00]
 $$
-```{r plot, fig.align='center', fig.cap='Son 4 yıl arasındaki değerleri gösteren girafik',echo=FALSE} 
-survey %>% 
-  ggplot(aes(x = ikibindokuz, y = ikibinyirmiiki)) +
-  geom_point() +
-  geom_smooth() +
-  scale_x_continuous("ikibindokuz")+  
-  scale_y_continuous("ikibinyirmiiki")
 
-ggplot(survey) +
-  aes(x =ikibinyirmiiki, ) +
-  geom_histogram()
 
-```
+
+\begin{figure}
+
+{\centering \includegraphics{final_files/figure-latex/plot-1} 
+
+}
+
+\caption{Son 4 yıl arasındaki değerleri gösteren girafik}(\#fig:plot-1)
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics{final_files/figure-latex/plot-2} 
+
+}
+
+\caption{Son 4 yıl arasındaki değerleri gösteren girafik}(\#fig:plot-2)
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Sonuç
