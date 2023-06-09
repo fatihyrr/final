@@ -1,7 +1,6 @@
 ---
-title: "Çalışmanızın Başlığı"
-author: 
-  - İsim Soyisim[^1]
+title: "TÜrkiye'de Yıllara ve İllere Göre Evlenme Sayıları"
+author: Fatih YARAR[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa-tr.csl
 header-includes:
@@ -25,7 +24,7 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-  Bu bölümde çalışmanızın özetini yazınız.
+  Türkiye, aile kültürünün en güzel yaşandığı ülkelerden biridir. Daha çok gelenekçi bir aile yapısı mevcuttur. Ancak son yıllarda baktığımızda ülkemizde aile yapısının giderek dönüşüme uğradığı görülmektedir. Kültürel değişim, sosyo-ekonomik gelişme, bireysel tutumlar, modernleşme gibi birçok neden, aile ve evlilik kavramlarına bakış açımızın değişmesine neden olmuştur .Değişen bu bakış açısı hem ailenin önemi giderek azaltmış hem insanlarda evlenmenin önüne bir engel olarak çıkmıştır. Evlenme yaşı da oldukça yükselmeye başlamış ve doğurganlık oranında düşmesine yol  açmıştır . Kadınlar evlenme olayında artık önemli bir faktör haline gelmiş kendi karar mekanizmasına sahip bireyler olmuşlardır ve toplumda kadının önemi artmıştır. Kadınların da eğitim ve iş hayatına atılmalarıyla birlikte evlenme için karar ailelerden bir nevi bireylere geçmiştir. Türkiye devam eden ekonomik kriz, boşanmaların artması evlenme oranlarının düşlemesine neden olmuştur 
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -34,92 +33,115 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: Öğrenci Numarası, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+[^1]: 21080154, [Github Repo](https://github.com/fatihyrr/final)
 
-# Final Hakkında Önemli Bilgiler
-
-\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
-
-**Proje gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
-
-**Proje klasörünüzü sıkıştırdıktan sonra (`OgrenciNumarasi.zip` dosyası) 9 Haziran 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
-
-\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
 # Giriş
-Bu taslak size proje ödevinizi yazarken yardımcı olması amacıyla oluşturulmuştur. Ödevlerinizde, makalelerinizde, sunumlarınızda ve projelerinizde kullandığınız tüm bilgi kaynaklarına atıfta bulunmalısınız. Alıntı ve gönderme yapmak okuyuculara çalışmanızda kullandığınız/başvurduğunuz  kaynaklara ulaşma imkanı sağlar. **Her ne kadar kendi sözlerinizi kullanıyor olsanız da, başkalarına ait fikirleri çalışmanızda aktarıyorsanız bu fikirlerin kaynağını belgelemek zorundasınız. Aksi takdirde akademik intihal yapmış olursunuz.** Yazım konusunda @aydinonat:2007'ye başvurabilirsiniz. 
-
-
-Proje ödevinizde yer alan başlıkların bu metinde yer alan başlıkları kesinlikle içermesi gerekmektedir. Burada kullanılan başlıklar haricinde farklı alt başlıklar da kullanabilirsiniz. Projenizi yazarken bu dosyayı taslak olarak kullanıp içeriğini projenize uyarlayınız.
+Türkiye nüfusunun çoğunluğu evlilik kurumuna önem veren bir topluluktur.Türk kültüründe toplumun temel yapı taşlarından biridir ve genellikle sosyal bağların kuvvetlendirildiği bir araçtır. Ancak son yıllara baktığımızda Türkiye’de evlilik yaşının yükseldiği de aşikardır Türkiye'de evlilik yaşının yükselmesi ve evliliklerin ertelenmesi eğilimi görülmektedir. Türkiye genç bir nüfusa sahip bir ülkedir, bu genç nüfusun eğitimine ve kariyer hedeflerine daha fazla odaklanmasından kaynaklanmaktadır. Kadınlarında işgücü katılımının artması evlilik yaşının yükselmesine sebep olan etkenlerden biridir.Türkiye'de evlilik sayıları yıllara göre değişiklik göstermektedir. Bu değişiklikler çeşitli faktörlerden etkilenebilir, örneğin ekonomik durum, eğitim seviyesi, kadınların işgücüne katılımı, kültürel değişimler ve demografik faktörler gibi etmenler rol oynayabilir.(@ccobanouglu2021turkiye) Ankara, İstanbul, İzmir gibi büyükşehirlere baktığımızda evlilik sayılarının nüfusa oranla bir azalma olduğunu görmekteyiz buralarda nüfus artarken evlenme sayıları hemen hemen aynı kalmıştır. Diğer yandan Türkiye’nin doğu kesime baktığımızda genel olarak orada da evlilik sayılarının arttığını görmekteyiz. Bunun sebepleri olarak da o bölgede doğurganlığın fazla olması (bir çiftin 5,6 çocuğunun olması) gibi etkenler sayılabilir. Bunlara ek olarak insanlar değişen dünyaya ayak uydurarak nikahsız yaşamaya başlaması, artan  ekonomik problemler yüzünden evlenmeden sevgili ve flört şeklinde yaşaması bu sayılarda değişkenlik yaşanmasına sebep olmuştur. Ben bu çalışmamda TÜİK’İN YAYINLADIĞI 2009-2022 YILLARI ARASINDATÜRKİYE’DE İLLERE GÖRE EVLİLİK SAYILARI VERİ SETİNİ kullanarak evlilik sayısında yaşanan değişimleri gözlemleyip analiz edeceğim.
 
 ## Çalışmanın Amacı
-Bu bölümde yaptığınız çalışmanın amacından ve öneminden birkaç paragraf ile bahsediniz.
+2009 -2022 yılları arasında Türkiyede iller göre evlenme sayılarının göre değişimlerini analiz edebilmeyi konu edinmiştir.
+Türkiye son 13 yılda illere evlenme sayılarının hangi yönde ilerlediği, Bireysel gibi görünse de evlenme sayılarının toplumsal olaylardan etkilenip etkilenmediğini ,etkilendiyse nasıl etkilendiğini istatistiksel yöntemlere başvurarak ,sosyodemografik açıdan incelemeyi ve sebeplerini kaynaklar ve veriler doğrultusunda istatiksel analiz yapabilmeyi amaçlanmaktadır .
 
 ## Literatür 
-
-Bu bölümde konu ile ilgili olarak okuduğunuz makaleleri referans vererek tartışınız. **Her makaleyi ayrı başlık altında tek tek özetlemeyiniz.** Literatür taramasında **en az altı** makaleye atıf yapılması ve bu makalelerden **en az ikisinin İngilizce** olması gerekmektedir.
+Toplumun en küçük birimi olarak kabul edilen aile, bireyin en temel sosyal çevresini oluşturmaktadır (Özgüven, 2014, 1). Aile kurumunun varlığı ve sürekliliği evlilik aracılığıyla sağlanmaktadır. Evlilik ise, kadın ve erkek ilişkisini meşru bir temele dayandıran toplumsal olgudur (Doğan, 2007, 208). Özgüven’e (2014, 19) göre ise evlilik, karşı cinsten iki kişinin birlikte yaşama, çocuk yapma ve yetiştirme, deneyimleri paylaşma gibi amaçlar ile yaptıkları bir sözleşmedir. Evlilik, devlet tarafından birtakım yasa ve düzenlemeler ile kontrol edilen yasal bir ilişkidir.(@ilhan2019marriage)Türkiye’de yaşanan demografik dönüşüm, kentleşme, eğitimin yaygınlaşması, gelirin artması, yaşam ve tüketim tarzlarında farklılaşma gibi toplumsal dönüşüm süreçlerine bağlı olarak erken evliliklerin yaygınlığı giderek azalmaktadır. Modernleşme ile birlikte toplumlarda aile kurumunun dönüşümüne neden olan çok sayıda süreç aynı anda yaşanmaktadır.Son yıllarda gençlerin evlilik yaşının yükseldiği ve evlilik öncesi ilişkilerin süresinin uzadığı gözlemlenmektedir.(@bakanliugi2015turkiye). Nüfusu ve haneyi ilgilendiren konulardan biri de evlilik yaşıdır. Türkiye’de evlilik yaşı son yıllarda giderek yükselmektedir2000 yılında Türkiye’de kadınlarda ilk evlenme yaşı ortalaması 23,2’den 2015 yılında 23.9’a yükselmiştir.Türkiye'de evliliklerin çoğunluğu . Özellikle kırsal bölgelerde ve daha muhafazakar toplumlarda, genç yaşta evlenme yaygındır. TÜİK’in tespitine göre Ağrı’da 2015 yılında kadınların ortalama evlenme yaşı 21.2’dir.(@kocc2017development,)Türkiye'de boşanma oranlarının da arttığı görülmektedir. Çiftler arasındaki uyumsuzluklar, iletişim sorunları, ekonomik zorluklar, aile baskısı ve diğer faktörler boşanmalara neden olabilir. Boşanma oranları, kentsel bölgelerde ve daha eğitimli kesimlerde genellikle daha yüksek olma eğilimindedir.Bu yüzdende insanlar erken yaşta evlenmeyi değil nikahsız bir birliktelik yada dini nikahlı bir birliktelik yaşamaktadırlar.Cinsiyet ayrımcılığına karşı çıkan mücadeleler sonucunda batı toplumlarında cinsiyetler arasında büyük oranda siyasal, ekonomik ve toplumsal eşitlik sağlanmıştır. Bu süreç sonunda kadının toplumsal yapı içerisinde edilgen bir yapıdan etkin bir konuma geçmesiyle; evlenme ve boşanma gibi sosyal olgularda modern yaşama özgü yeni durumlar ortaya çıkmıştır.(@aydin2010toplumsal)
 
 # Veri 
-Bu bölümde çalışmanızda kullandığınız veri setinin kaynağını, ham veri üzerinde herhangi bir işlem yaptıysanız bu işlemleri ve veri seti ile ilgili özet istatistikleri tartışınız. Bu bölümde tüm değişkenlere ait özet istatistikleri (ortalama, standart sapma, minimum, maksimum, vb. değerleri) içeren bir tablo (Tablo \ref{tab:ozet}) olması zorunludur. Tablolarınıza gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız. [@perkins:1991]
+Bu çalışmam kullandığım veri  TÜİK'in yayımlamış olduğu veriler içerisinden seçmiş olduğum 2002-2022 yılları arasında İllere Göre EVlenme oranları adlı veri setidir.BU veriyi aldıktan sonra üzerinde bir takım değişikliklerde bulundum.Normalde 21 değişken bulunmaktaydı.Ben bu değişkelerin sayısı fazla olduğu için ilk 7 yıllık verisini silerek 14 değişkene düşürmüş oldum .83 olan gözlem sayısını ise 82'ye düşürüp ortaya çıkabilecek karmaşık tabloların ve grafiklerin önüne geçmiş oldum
 
-Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'a aktaran ve özet istatistikleri üreten kodlar yer almalıdır.
+Evlilik Sayıları: Evlilik sayıları yıl yıl değişmektedir. Ortalama değerlere bakarak, yıllar arasındaki evlilik sayılarının genel bir trende sahip olduğunu gözlemleyebiliriz. Örneğin, en yüksek ortalama evlilik sayısı 2009 yılında 7305.46 iken, en düşük ortalama evlilik sayısı 2020 yılında 6028.83 olarak görülmektedir.
 
-```{r}
+Dağılım: Evlilik sayılarının standart sapma değerleri, yıllar arasındaki değişkenliği gösterir. Yüksek standart sapma değerleri, evlilik sayılarının yıllar arasında büyük ölçüde değiştiğini ve dağılımın geniş olduğunu gösterir. Örneğin, 2009 yılındaki standart sapma 12117.10 iken, 2016 yılındaki standart spma 10541.60 olarak görülmektedir.
+
+Medyan Evlilik Sayısı: Medyan değeri, evlilik sayılarının orta noktasını gösterir. Medyan değeri, evlilik sayılarının dağılımında daha az etkilenen bir ölçüdür. Örneğin, 2011 yılında medyan evlilik sayısı 4048 iken, 2019 yılında 3479 olarak görülmektedir.
+
+En Yüksek ve En Düşük Evlilik Sayısı: Tablodaki verilere göre, yıllar arasında en yüksek ve en düşük evlilik sayıları değişmektedir. Örneğin, en yüksek evlilik sayısı 2011 yılında 114382 iken, en düşük evlilik sayısı 2020 yılında 3046 olarak görülmektedir.
+
+```{r,echo=FALSE}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("../data/survey.csv"))
+survey <- read_csv("https://raw.githubusercontent.com/fatihyrr/final/main/data/%C3%B6dev1.csv")
+survey %>% 
+  group_by(ikibinonbir) %>% 
+  filter(n() > 0) %>% 
+  summarise(across(where(is.numeric), ~ mean(.x,na.rm=TRUE)))
 ```
 
-Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
+ 
 
 ```{r, echo=FALSE}
 library(xtable) 
-# devtools::install_github("emraher/summarytools")
+# devtools::install_github("fatihyrr/summarytools")
 library(summarytools)
 st_options(lang = "tr")
+
 ```
 
-`echo=FALSE` seçeneği ile kodların türetilen pdf dosyasında görünmesini engelleyin ve sonuçlarınızı tablo halinde rapor edin.
 
 ```{r results='asis', echo=FALSE}
 survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+ select("Province","ikibindokuz", "ikibinon", "ikibinonbir", "ikibinoniki","ikibinonüç","ikibinondört","ikibinonbeş","ikibinonaltı","ikibinonyedi","ikibinonsekiz","ikibinondokuz","ikibinyirmi","ikibinyirmibir","ikibinyirmiiki") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Özet İstatistikler",
          label = "tab:ozet",
          align = c("l", "c", "c", "c", "c", "c")) %>% 
   print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
 ```
-
-
 # Yöntem ve Veri Analizi
 Bu bölümde veri setindeki bilgileri kullanarak çalışmanın amacına ulaşmak için kullanılacak yöntemleri açıklayın. Derste işlenen/işlenecek olan analiz yöntemlerinden (Hipotez testleri ve korelasyon analizi gibi) çalışmanın amacına ve veri setine uygun olanlar bu bölümde kullanılmalıdır. [@newbold:2003; @ozsoy:2010; @ozsoy:2014]
 
-Örneğin, regresyon analizi gerçekleştiriyorsanız tahmin ettiğiniz denklemi bu bölümde tartışınız. Denklemlerinizi ve matematiksel ifadeleri $LaTeX$ kullanarak yazınız.
-
 $$
-Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
+ikibinonbes = [7444.22, 13748.38, 495.00, 3875.00, 114382.00]
+ikibinyirmi = [6028.83, 10541.60, 355.00, 3046.00, 86029.00]
 $$
 
-Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. Çalışmanıza uygun biçimde histogram, nokta grafiği (Şekil \@ref(fig:plot) gibi), kutu grafiği, vb. grafikleri bu bölüme ekleyiniz. Şekillerinize de gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız.
 
 
-```{r plot, fig.align='center', fig.cap='Muhteşem Bir Grafik'}
+```{r plot, fig.align='center', fig.cap='Son 4 yıl arasındaki değerleri gösteren girafik',echo=FALSE} 
 survey %>% 
-  ggplot(aes(x = handedness, y = handspan)) +
+  ggplot(aes(x = ikibindokuz, y = ikibinyirmiiki)) +
   geom_point() +
   geom_smooth() +
-  scale_x_continuous("Handedness") + 
-  scale_y_continuous("Handspan")
+  scale_x_continuous("ikibindokuz")+  
+  scale_y_continuous("ikibinyirmiiki")
+
+ggplot(survey) +
+  aes(x =ikibinyirmiiki, ) +
+  geom_histogram()
+
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Sonuç
-Bu bölümde çalışmanızın sonuçlarını özetleyiniz. Sonuçlarınızın başlangıçta belirlediğiniz araştırma sorusuna ne derece cevap verdiğini ve ileride bu çalışmanın nasıl geliştirilebileceğini tartışınız.
-
-**Kaynakça bölümü Rmarkdown tarafından otomatik olarak oluşturulmaktadır. Taslak dosyada Kaynakça kısmında herhangi bir değişikliğe gerek yoktur.** 
-
-**_Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir._**
+Veri setimizi incelediğimizde karşılaştığımız tablo ülkemizin büyük şehirlerinde artan nüfusa oranla evlenme sayılarının giderek düştüğü aşikâr bir gerçektir.  Her ne kadar ülkemizin doğu kesiminde fazla bir azalmanın görülmese bile ilerleyen dönemlerden kırsaldan kente olan göçlerle birlikte o bölgede evlenme yaşının artacağı evlenme sayılarının azalacağı şekillinde bir öngörüde bulunabiliriz. Bununla birlikte azalan doğurganlığın ülkemiz nüfus açısından bir tehlike oluşturabilir. Bölgelerimizde İklim şartları, ailelerin yaşam tarzları ve geleneklerde şehirlere göre evlenme sayılarındaki değişkenliği açıklaya bilir. Aile yapısın bozulması da kuvvetli bağların bozulup kültürümüzün yok olmasına da sebep olabilmektedir. Bu sorunun çözümü kişilerin bilinçlendirilmesiyle ve devlet teşviğiyle mümkün kıllanabilir. Devletimiz değişen sosyal hayat şartları ve ekonomik problemlerin aşılmasında genç yaştaki en azından 24-30 yaş arasındaki bireylere desteğiyle mümkün kılınabilir. Bu problemin devlet eliyle çözülmesi daha mümkün gözükmektedir .Ancak bu gözlem verilerin bir müddet daha devam etmesi kesin sonuçlar elde etmemize yarar.
 
 \newpage
 # Kaynakça {#references}
